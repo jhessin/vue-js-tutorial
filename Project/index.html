@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Blog Site</title>
+  <meta charset="utf-8" />
+  <script src="node_modules/vue/dist/vue.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <h1>Welcome to my Blog Site!</h1>
+
+  <div id="blogPosts">
+    <blog-post
+      v-for='post in posts'
+      v-bind:blogpost='post'
+      />
+  </div>
+  <div id="blogPostCreation">
+    <h2>Make a new blog post</h2>
+    Title: <input v-model='title'/><br/>
+    Content: <input v-model='content'/><br/>
+    <button v-on:click='publishPost'>Publish</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
