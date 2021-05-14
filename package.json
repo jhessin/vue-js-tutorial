@@ -1,0 +1,21 @@
+{
+  "name": "vue-js-tutorial",
+  "version": "1.0.0",
+  "main": "index.html",
+  "repository": "git@github.com:jhessin/vue-js-tutorial.git",
+  "author": "Jim Hessin <jhessin@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "live-server"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "vue": "^2.6.12"
+  },
+  "devDependencies": {
+    "eslint": "^7.26.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-vue": "^7.9.0"
+  }
+}

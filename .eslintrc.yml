@@ -1,0 +1,17 @@
+env:
+  browser: true
+  es2021: true
+# extends
+extends:
+  - 'plugin:vue/essential'
+  - airbnb-base
+# parser
+parserOptions:
+  ecmaVersion: 12
+# plugins
+plugins:
+  - vue
+# rules
+rules: {}
+globals:
+  Vue: readable
