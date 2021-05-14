@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Vue Practice</title>
+  <script src="node_modules/vue/dist/vue.min.js"></script>
+  <meta charset="utf-8" />
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div id="firstDiv">
+    <input v-model='number'>
+    <p>number is: {{ number }}</p>
+    <ul>
+      <li v-for='number in numbers'>
+        {{ number }}
+      </li>
+    </ul>
+  </div>
+  <div id="secondDiv">
+    <button v-on:click='openCloseDoor'>Open/Close door</button>
+    <p v-if='isDoorOpen'>Come in!</p>
+    <p v-else>Stay out!</p>
+  </div>
+  <div id="thirdDiv">
+    <ul>
+      <grocery-item 
+        v-for='item in groceryItems' 
+        v-bind:groceryitem='item'/>
+    </ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
